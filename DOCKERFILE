@@ -21,6 +21,7 @@ ADD config/kibana.yml /usr/share/kibana/config/
 # Add the launcher/wrapper script. It knows how to interpret environment
 # variables and translate them to Kibana CLI options.
 ADD bin/kibana-docker /usr/share/kibana/bin/
+RUN chmod +x /usr/share/kibana/bin/kibana-docker
 
 # Add a self-signed SSL certificate for use in examples.
 ADD ssl/kibana.example.org.* /usr/share/kibana/config/
