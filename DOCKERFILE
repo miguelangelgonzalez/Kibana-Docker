@@ -2,7 +2,7 @@ FROM centos:7
 LABEL maintainer "Elastic Docker Team <docker@elastic.co>"
 EXPOSE 5601
 
-ARG ELASTIC_VERSION=5.4.2
+ARG ELASTIC_VERSION=5.5.0
 ARG URL_ROOT=https://artifacts.elastic.co/downloads/kibana/kibana-${ELASTIC_VERSION}
 
 # Add Reporting dependencies.
